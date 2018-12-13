@@ -8,5 +8,7 @@ Not all words contained within the Hansard record will be considered for the wor
 
 In some cases the word cloud will not contain 100 words; if a word cannot be fitterd within the area of the chart it will be dropped.
 
+Currently, the automatic scheduling of the bot is through a .bat file and Windows Task Scheduler. Advice on how to move to an alternative method is welcome. 
+
 # Credit
 This project was inspired by a similar [Twitter bot](https://twitter.com/wmbubble) created by my colleague, [Oli Hawkins](https://github.com/olihawkins).
