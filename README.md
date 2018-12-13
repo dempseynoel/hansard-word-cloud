@@ -1,5 +1,5 @@
 # hansard-word-cloud
-This is a simple Twitter bot which posts a daily word cloud summary of what was said in the House of Commons chamber during the previous day. The bot posts to the following account: [Echoing the Chamber](https://twitter.com/EchoingChamber).
+This is a simple Twitter bot which posts a daily word cloud summary of what was said in the House of Commons Chamber during the previous day. The bot posts to the following account: [Echoing the Chamber](https://twitter.com/EchoingChamber).
 
 # How it works
 Each morning, at around 7am, the Hansard record for the previous day is downloaded and 100 of the most frequently recorded words are extracted. These words are then plotted into a word cloud which is automatically posted to Twitter through its API.
