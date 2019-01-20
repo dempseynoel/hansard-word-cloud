@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+.DS_Store
+.httr-oauth
+check.txt
+output/
+auth.R

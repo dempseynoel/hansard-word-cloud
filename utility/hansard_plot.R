@@ -8,14 +8,14 @@ data <- hansard_file()
 
 # Remove number characters 
 data <- removeNumbers(data$`Commons Chamber`)
-data <- as.tibble(data)
+data <- enframe(data, name = NULL)
 
 # Remove NA
 data <- na.omit(data)
 
 # Remove all non alpha
 data <- str_replace_all(data, "[^[:alnum:]]", " ")
-data <- as.tibble(data)
+data <- enframe(data, name = NULL)
 
 # Tokenize
 data <- data %>% unnest_tokens(word, value)

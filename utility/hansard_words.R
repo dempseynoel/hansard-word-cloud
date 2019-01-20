@@ -995,11 +995,11 @@ month_stop_words <- c(
 
 )
   
-mp_first_stop_words <- as.tibble(mp_first_stop_words)
-mp_last_stop_words  <- as.tibble(mp_last_stop_words)
-parly_stop_words    <- as.tibble(parly_stop_words)
-party_stop_words    <- as.tibble(party_stop_words)
-month_stop_words    <- as.tibble(month_stop_words)
+mp_first_stop_words <- enframe(mp_first_stop_words, name = NULL)
+mp_last_stop_words  <- enframe(mp_last_stop_words, name = NULL)
+parly_stop_words    <- enframe(parly_stop_words, name = NULL)
+party_stop_words    <- enframe(party_stop_words, name = NULL)
+month_stop_words    <- enframe(month_stop_words, name = NULL)
 
 mp_first_stop_words <- rename(mp_first_stop_words, word = value)
 mp_last_stop_words  <- rename(mp_last_stop_words, word = value)

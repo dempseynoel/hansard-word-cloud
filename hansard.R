@@ -13,19 +13,15 @@ library(ggplot2)
 library(ggwordcloud)
 library(twitteR)
 
-setwd("C:/Users/Noel/Documents/R/projects/hansard")
 source("utility/hansard_functions.R")
+source("utility/auth.R")
 
 # Main ------------------------------------------------------------------------
 
-# Twitter API
-setup_twitter_oauth(consumer_key = "YOUR KEY",
-                    access_token = "YOUR KEY",
-                    consumer_secret = "YOUR KEY",
-                    access_secret = "YOUR KEY")
+setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 
 # Check if latest sitting day is new
-x <- as.tibble(hansard_date())
+x <- enframe(hansard_date(), name = NULL)
 y <- read_tsv("check.txt", col_names = "value",
               col_types = cols(.default = "c"))
 
