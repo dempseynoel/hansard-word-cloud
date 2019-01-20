@@ -18,6 +18,7 @@ source("utility/auth.R")
 
 # Main ------------------------------------------------------------------------
 
+# Twitter API authentication
 setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 
 # Check if latest sitting day is new
