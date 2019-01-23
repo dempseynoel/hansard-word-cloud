@@ -1,3 +1,6 @@
+### Note
+This bot is not currently producing Tweets. The code works, although have trouble getting the automation to work on Windows and/or Mac OS...
+
 # hansard-word-cloud
 This is a simple Twitter bot which posts a daily word cloud summary of what was said in the House of Commons Chamber during the previous day. The bot posts to the following account: [Echoing the Chamber](https://twitter.com/EchoingChamber).
 
