@@ -1,6 +1,3 @@
-### Note
-This bot is not currently producing Tweets. The code works, although have trouble getting the automation to work on Windows and/or Mac OS...
-
 # hansard-word-cloud
 This is a simple Twitter bot which posts a daily word cloud summary of what was said in the House of Commons Chamber during the previous day. The bot posts to the following account: [Echoing the Chamber](https://twitter.com/EchoingChamber).
 
@@ -11,7 +8,7 @@ Not all words contained within the Hansard record will be considered for the wor
 
 In some cases the word cloud will not contain 100 words; if a word cannot be fitted within the area of the chart it will be dropped.
 
-Currently, the automatic scheduling of the bot is through a .bat file and Windows Task Scheduler. Advice on how to move to an alternative method is welcome.  
+Currently, the automatic scheduling of the bot is through an AppleScript in conjuction with Power Manager. Advice on how to move to an alternative method is welcome.  
 
 ### Credit
 This project was inspired by a similar [Twitter bot](https://twitter.com/wmbubble) created by my colleague, [Oli Hawkins](https://github.com/olihawkins).
